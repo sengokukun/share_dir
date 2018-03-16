@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>share_dir</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>dialog sample</h1>
+  </header>
+
+  <main>
+    <h2>kiji title</h2>
+    <p>いやああああああああああああああああああああああああああああああだあああああああああああああああああああああああああああああああああああ</p>
+    <p class="mt20">いやああああああああああああああああああああああああああああああだあああああああああああああああああああああああああああああああああああ</p>
+    <dialog>
+      <div class="modal-header">
+        headerだよ
+      </div>
+      <div class="modal-contents">
+        contentsだよ
+      </div>
+      <div class="modal-footer">
+        footerだよ
+      </div>
+      <button id="close" class="close" type="button">&times;</button>
+    </dialog>
+
+    <button class="open">OPEN MODAL</button>
+  </main>
+
+  <script>
+    let open = document.querySelector('.open');
+    let close = document.querySelector('.close');
+    let modal = document.querySelector('dialog');
+
+    open.addEventListener('click', () => modal.showModal());
+    close.addEventListener('click', () => modal.close());
+    document.addEventListener('click', ({
+      target
+    }) => target === modal && modal.close());
+  </script>
+</body>
+
+</html>
