@@ -1,0 +1,43 @@
+header {
+  background-color: #eee;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, .5);
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+}
+
+.contact a {
+  background-color: #00a5bf;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  width: 180px;
+}
+
+.item {
+  background-color: #ddd;
+  border-bottom: 1px solid #eee;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  height: 400px;
+  line-height: 400px;
+  padding: 30px;
+  text-align: center;
+}
