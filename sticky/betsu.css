@@ -16,8 +16,8 @@ header {
 .item {
   display: flex;
   align-items: center;
-  width: 25%;
-  height: 250px;
+  width: calc(100% / 8);
+  height: 150px;
 }
 
 .item1 {
@@ -51,6 +51,42 @@ header {
   padding: 10px;
   position: sticky;
   top: 50px;
+  bottom: 200px;
+}
+
+.item5 {
+  background-color: orange;
+  box-sizing: border-box;
+  padding: 10px;
+  position: sticky;
+  top: 350px;
+  bottom: 20px;
+}
+
+.item6 {
+  background-color: green;
+  box-sizing: border-box;
+  padding: 10px;
+  position: sticky;
+  top: 60px;
+  bottom: 400px;
+}
+
+.item7 {
+  background-color: blue;
+  box-sizing: border-box;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.item8 {
+  background-color: red;
+  box-sizing: border-box;
+  padding: 10px;
+  position: sticky;
+  top: 300px;
   bottom: 200px;
 }
 
